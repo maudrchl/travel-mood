@@ -1,21 +1,22 @@
 <template class="card">
-    <div class="card" ref="card">
+<body>
+    <div class="card">
         <img src="../assets/img/norway.png"/>
-        <h2 class="title-card">Metro Stockholm</h2>
-        <h3 class="country-card">Sweden</h3>
-        <h3 class="date-card">April 2019</h3>
+        <h2 class="title-card">{{card.title}}</h2>
+        <h3 class="country-card">{{card.country}}</h3>
+        <h3 class="date-card">{{card.date}}</h3>
     </div>
+</body>
 </template>
 
 <style>
-
 .card {
     width: 385px;
     height: 452px;
     background: white;
     margin: 0 auto;
-    margin-top: 100px;
     user-select: none;
+    /* position: absolute; */
     /* opacity: 0.1; */
 }
 

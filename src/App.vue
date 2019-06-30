@@ -26,6 +26,8 @@ body {
   padding: 20px;
   padding-left: 8%;
   padding-right: 8%;
+  position: fixed;
+  z-index: 266;
 }
 
 #nav a {
@@ -43,10 +45,6 @@ body {
 
 #nav a.router-link-exact-active {
   opacity: 1;
-}
-
-router-link {
-  text-decoration: none;
 }
 
 </style>
