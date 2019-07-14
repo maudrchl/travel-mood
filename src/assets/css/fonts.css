@@ -12,6 +12,12 @@
   
 @font-face {
   font-family: 'Maison Neue';
-  src: url('../fonts/MaisonNeueBold.otf');
+  src: url('../fonts/MaisonNeueLight.otf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/MaisonNeueBold.ttf');
   font-weight: bold;
 }

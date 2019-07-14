@@ -32,13 +32,23 @@ export default new Router({
       }
     },
     {
-      path: "/trip",
-      name: "trip",
+      path: "/trips/norway",
+      name: "norway",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: function() {
-        return import(/* webpackChunkName: "about" */ "./views/Trip.vue");
+        return import(/* webpackChunkName: "about" */ "./views/Norway.vue");
+      }
+    },
+    {
+      path: "/trips/SouthAfrica",
+      name: "SouthAfrica",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: function() {
+        return import(/* webpackChunkName: "about" */ "./views/Africa.vue");
       }
     }
   ]

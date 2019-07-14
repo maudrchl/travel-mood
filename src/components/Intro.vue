@@ -1,10 +1,10 @@
 <template>
   <div class="intro">
-    <h1>Travel Mood</h1>
+    <h1 cllas="intro-title">Travel Mood</h1>
   </div>
 </template>
 
-<style>
+<style scoped>
 h1 {
     text-align: center;
     font-size: 90px;

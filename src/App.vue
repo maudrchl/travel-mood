@@ -23,7 +23,7 @@ body {
 }
 
 #nav {
-  padding: 20px;
+  padding: 40px;
   padding-left: 8%;
   padding-right: 8%;
   position: fixed;

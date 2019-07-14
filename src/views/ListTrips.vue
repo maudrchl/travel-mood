@@ -1,7 +1,7 @@
 <template>
   <div class="trips" ref="trips">
     <div class="list-trips" ref="list-trips" v-for="(value, key) in list" :key="key">
-      <router-link to="/trip">
+      <router-link :to="'/trips/'+list[key].country">
       <ul class="trip-item">
         <li class="date-list">{{list[key].date}}</li>
         <li class="city-list">{{list[key].city}}</li>
@@ -21,39 +21,44 @@ export default {
     data: function() {
     return {
       list: [{
+        date: 'Soon',
+        city: 'Reykjavik',
+        country: 'Iceland 🇮🇸',
+      },
+      {
         date: 'Now',
         city: 'Cape Town',
-        country: 'South Africa',
+        country: 'SouthAfrica',
       },
       {
         date: '2019',
         city: 'Barcelona',
-        country: 'Spain',
+        country: 'Spain 🇪🇸',
       },
       {
         date: '2019',
         city: 'Norway',
-        country: 'On the roads',
+        country: 'Norway',
       },
       {
         date: '2019',
         city: 'Stockholm',
-        country: 'Sweden',
+        country: 'Sweden 🇸🇪',
       },
       {
         date: '2019',
         city: 'Copenhagen',
-        country: 'Denmark',
+        country: 'Denmark 🇩🇰',
       },
       {
         date: '2018',
         city: 'Amsterdam - Utrecht',
-        country: 'Netherlands',
+        country: 'Netherlands 🇳🇱',
       },
       {
         date: '2018',
         city: 'Prague',
-        country: 'Czech Republic',
+        country: 'Czech Republic 🇨🇿',
       },
       {
         date: '2018',
@@ -79,7 +84,7 @@ export default {
     font-size: 10px;
     /* padding-left: 120px; */
     padding-bottom: 120px;
-    padding-top: 60px;
+    padding-top: 140px;
 }
 
 h3 {
@@ -119,20 +124,19 @@ li {
   height:2px;
   background: #0C0C0C;
   opacity: 0.02;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .country-list {
     font-size: 24px;
     color: #C4C4C4;
     text-decoration: none;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 .arrow-list {
   width: 3%;
   float:right;
-  margin-right: 10%;
   opacity: 0;
 }
 
