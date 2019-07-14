@@ -14,5 +14,10 @@ export default {
     Wall
   }
 };
+
 </script>
+
+<style>
+
+</style>
 

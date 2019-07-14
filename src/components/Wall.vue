@@ -37,7 +37,7 @@ export default {
     for (let i = 0; i < cards.length; i++){
       cards[i].style.top = Math.floor(Math.random()*document.body.clientHeight)+ 'px';
       cards[i].style.left = Math.floor(Math.random()*document.body.clientWidth)+ 'px';
-      let random_rotate = Math.random() * (10 - (-10)) + (-10)
+      let random_rotate = Math.random() * (20 - (-20)) + (-20)
       cards[i].style.transform = 'rotate('+random_rotate+'deg)'
     }
 
@@ -48,7 +48,6 @@ export default {
 
     function onDown(e) {
       e.preventDefault();
-      console.log('rpout')
 
       var evt = e.type === 'touchstart' ? e.changedTouches[0] : e;
       state.distX = Math.abs(drag.offsetLeft - evt.clientX);
@@ -63,7 +62,7 @@ export default {
       if (drag.style.pointerEvents === 'none') {
         var evt = e.type === 'touchmove' ? e.changedTouches[0] : e;
 
-        drag.style.left = `${evt.clientX - state.distX + 10}px`;
+        drag.style.left = `${evt.clientX - state.distX}px`;
         drag.style.top = `${evt.clientY - state.distY}px`;
       }
      for (let i = 0; i < cards.length; i++){
@@ -107,7 +106,6 @@ a {
 .cards {
   width: 130%;
   height: 150vh;
-  background: yellow;
   position: absolute;
 }
 

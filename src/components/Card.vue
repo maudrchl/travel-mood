@@ -107,6 +107,10 @@ export default {
     z-index: 30;
 }
 
+.card:hover {
+    cursor: none;
+}
+
 img {
     width: 345px;
     height: 330px;

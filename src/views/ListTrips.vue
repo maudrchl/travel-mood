@@ -21,11 +21,6 @@ export default {
     data: function() {
     return {
       list: [{
-        date: 'Soon',
-        city: 'Reykjavik',
-        country: 'Iceland 🇮🇸',
-      },
-      {
         date: 'Now',
         city: 'Cape Town',
         country: 'SouthAfrica',
@@ -53,7 +48,7 @@ export default {
       {
         date: '2018',
         city: 'Amsterdam - Utrecht',
-        country: 'Netherlands 🇳🇱',
+        country: 'Netherlands',
       },
       {
         date: '2018',
