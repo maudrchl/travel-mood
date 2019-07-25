@@ -4,7 +4,7 @@
       <router-link :to="'/trips/'+list[key].country">
       <ul class="trip-item">
         <li class="date-list">{{list[key].date}}</li>
-        <li class="city-list">{{list[key].city}}</li>
+        <li class="city-list" ref="title">{{list[key].city}}</li>
         <li class="country-list">{{list[key].country}}</li>
         <img class="arrow-list" src="../assets/icons/arrow.svg"/>
         <div class="line-list"></div>
@@ -15,6 +15,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { TimelineMax } from 'gsap'
+import { TimelineLite } from 'gsap'
+
 export default {
     name: 'ListTrips',
 
@@ -67,8 +71,21 @@ export default {
       },
       ],
     };
-  }
+  },
+  created: function() {
+    // this.data = this.$store.state.wp.pages.list
+  },
+  methods: {
+    mountAnimation: function() {
+      const timeline = new TimelineLite()
+      console.log(timeline)
+      timeline
+        .from(this.$refs.title, .5, { y: '40px', opacity: 0, ease: Power1.easeOut }, delay + .5)
+    }
+   },
 };
+
+
 </script>
 
 <style scoped>

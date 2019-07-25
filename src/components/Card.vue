@@ -13,6 +13,7 @@
 
 <script>
 import Card from "./Card.vue";
+import TweenMax from "gsap";
 
 export default {
   name: "Card",
