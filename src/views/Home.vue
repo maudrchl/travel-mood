@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Wall/>
+    <Wall />
   </div>
 </template>
 
@@ -14,10 +14,6 @@ export default {
     Wall
   }
 };
-
 </script>
 
-<style>
-
-</style>
-
+<style></style>

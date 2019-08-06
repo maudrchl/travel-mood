@@ -4,11 +4,17 @@
 <template class="carousel">
   <body>
     <div class="carousel">
-    <div class="carousel-container">
-        <div class="carousel-img1"><img class="img-carousel" src="../assets/img/cpt.jpeg"></div>
-        <div class="carousel-img2"><img class="img-carousel" src="../assets/img/cpt2.jpeg"></div>
-        <div class="carousel-img3"><img class="img-carousel" src="../assets/img/cpt.jpeg"></div>
-    </div>
+      <div class="carousel-container">
+        <div class="carousel-img1">
+          <img class="img-carousel" src="../assets/img/cpt.jpeg" />
+        </div>
+        <div class="carousel-img2">
+          <img class="img-carousel" src="../assets/img/cpt2.jpeg" />
+        </div>
+        <div class="carousel-img3">
+          <img class="img-carousel" src="../assets/img/cpt.jpeg" />
+        </div>
+      </div>
     </div>
   </body>
 </template>
@@ -19,14 +25,12 @@ import Carousel from "./Carousel.vue";
 export default {
   name: "Carousel",
   components: {
-    Carousel,
-  },
-}
-
+    Carousel
+  }
+};
 </script>
 
 <style>
-
 .carousel {
   width: 100%;
   height: 900px;
@@ -64,13 +68,10 @@ export default {
   background: black;
 }
 
-
 .carousel-img3 {
   width: 1200px;
   height: 700px;
   background: black;
   margin: 2% 0% 2% 1%;
 }
-
-
 </style>

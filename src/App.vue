@@ -14,19 +14,18 @@
 </template>
 
 <script>
-
 // all the variables
-const $cursor = document.querySelector('.cursor')
-const $insideCursor = document.querySelector('.inside_cursor')
-let radius = 60
-let cursorX = 4
-let cursorY = 4
-const event = 0
+// const $cursor = document.querySelector(".cursor");
+// const $insideCursor = document.querySelector(".inside_cursor");
+// let radius = 60;
+// let cursorX = 4;
+// let cursorY = 4;
+// const event = 0;
 
-const mouse = {
-  x: 0,
-  y: 0
-}
+// const mouse = {
+//   x: 0,
+//   y: 0
+// };
 
 // detect the move of the mouse
 // document.addEventListener('mousemove', (event) => {
@@ -79,18 +78,17 @@ const mouse = {
 //     $cursor.style.height = '30px'
 //   }, 100)
 // })
-
 </script>
 
 <style>
 body {
-   background: #F2F2F2;
-   margin: 0;
-   /* cursor: none; */
+  background: #f2f2f2;
+  margin: 0;
+  /* cursor: none; */
 }
 
 #app {
-  font-family: 'MaisonNeueBook', Helvetica, Arial, sans-serif;
+  font-family: "MaisonNeueBook", Helvetica, Arial, sans-serif;
   /* font-family: 'Canela', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -108,12 +106,12 @@ body {
   font-weight: 400;
   text-decoration: none;
   font-size: 1.1rem;
-  color: #100B0B;
+  color: #100b0b;
   opacity: 0.3;
 }
 
-.right-nav{
-  float:right;
+.right-nav {
+  float: right;
   margin-left: 30px;
 }
 
@@ -134,26 +132,29 @@ body {
   background: red;
 } */
 
-
 @keyframes mousedown {
-    0% {transform : scale(1)}
-    100% {transform : scale(1.3)}
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
 
 #active {
-    animation: click 2s linear;
+  animation: click 2s linear;
 }
 
 @keyframes click {
-    0% {
-        transform: scale(1)
-    }
-    50% {
-        transform: scale(2)
-    }
-    100% {
-        transform: scale(1)
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* 
 .cursor {
@@ -176,4 +177,3 @@ body {
     background: rgb(179, 179, 179);
 } */
 </style>
-

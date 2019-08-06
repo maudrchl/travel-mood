@@ -4,9 +4,9 @@
       <h1 class="big-title" ref="hello">Hello</h1>
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/oldme.png"/>
+          <img class="card-img" src="../assets/img/oldme.png" />
           <h2 class="title-card">Old me ☺</h2>
-          <h3 class="country-card">Hey you !</h3>        
+          <h3 class="country-card">Hey you !</h3>
         </div>
       </div>
       <div class="right-content">
@@ -17,45 +17,45 @@
     <div class="content">
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/oldme2.png"/>
-          <h2 class="title-card">Brave but not too brave </h2>
-          <h3 class="country-card">Little monkey 🐒</h3>        
+          <img class="card-img" src="../assets/img/oldme2.png" />
+          <h2 class="title-card">Brave but not too brave</h2>
+          <h3 class="country-card">Little monkey 🐒</h3>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/oldme3.png"/>
+          <img class="card-img" src="../assets/img/oldme3.png" />
           <h2 class="title-card">Metz Training</h2>
-          <h3 class="country-card">Centre back player with my 1m64.</h3>        
+          <h3 class="country-card">Centre back player with my 1m64.</h3>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/oldme5.jpg"/>
-          <h2 class="title-card">Brave but not too brave </h2>
-          <h3 class="country-card">Little monkey 🐒</h3>        
+          <img class="card-img" src="../assets/img/oldme5.jpg" />
+          <h2 class="title-card">Brave but not too brave</h2>
+          <h3 class="country-card">Little monkey 🐒</h3>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/oldme6.jpg"/>
+          <img class="card-img" src="../assets/img/oldme6.jpg" />
           <h2 class="title-card">What's next ?</h2>
-          <h3 class="country-card">Impatient</h3>        
+          <h3 class="country-card">Impatient</h3>
         </div>
       </div>
     </div>
     <div class="content">
       <div class="left-content">
         <div class="card" ref="card">
-          <img class="card-img" src="../assets/img/maud.jpg"/>
+          <img class="card-img" src="../assets/img/maud.jpg" />
           <h2 class="title-card">What's next ?</h2>
-          <h3 class="country-card">Impatient</h3>        
+          <h3 class="country-card">Impatient</h3>
         </div>
       </div>
     </div>
@@ -116,7 +116,6 @@ export default {
 }
 </script>
 
-
 <style scoped>
 
 .big-title {
@@ -126,9 +125,9 @@ export default {
 }
 
 .card {
-    width: 385px;
-    height: 452px;
-    background: white;
+  width: 385px;
+  height: 452px;
+  background: white;
 }
 
 .content {
@@ -155,7 +154,7 @@ export default {
 }
 
 .left-content {
-  display: inline-block;
+  /* display: inline-block; */
   float: left;
   margin-top: 10%;
   margin-right: 30%;
@@ -183,8 +182,7 @@ p {
 }
 
 .link-about {
-  color: #9B9B9B;
+  color: #9b9b9b;
   text-decoration: underline;
 }
-
 </style>
