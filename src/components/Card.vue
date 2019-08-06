@@ -32,6 +32,13 @@ export default {
         img: require('../assets/img/norway.png')
       },
       {
+        path: 'trips/africa',
+        title: 'Chapmans Peak',
+        country: 'South Afria',
+        date: 'July 2018',
+        img: require('../assets/img/cpt2.jpg')
+      },
+      {
         path: 'trips/norway',
         title: 'Berlin',
         country: 'Germany',
@@ -44,13 +51,6 @@ export default {
         country: 'Sweden',
         date: 'April 2019',
         img: require('../assets/img/stockholm.jpeg')
-      },
-      {
-        path: 'trips/norway',
-        title: 'Stockholm',
-        country: 'Sweden',
-        date: 'April 2019',
-        img: require('../assets/img/stockholm2.jpeg')
       },
       {
         path: 'trips/norway',

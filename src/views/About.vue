@@ -1,6 +1,7 @@
 <template>
   <div class="about" ref="about">
     <div class="content main">
+      <h1 class="big-title" ref="hello">Hello</h1>
       <div class="left-content">
         <div class="card" ref="card">
           <img class="card-img" src="../assets/img/oldme.png"/>
@@ -9,8 +10,8 @@
         </div>
       </div>
       <div class="right-content">
-        <h1 class="title-about" ref="title">From the beginning 🌴</h1>    
-        <p class="text">Nice to meet u ! This is the 3 year-old me. And now you wonder, ok but which one ? The craziest one. I had the chance to grow up in a lovely family in a small town near Metz (France).</p>
+        <h1 class="title-about" ref="title"></h1>    
+        <p class="text"></p>
       </div>
     </div>
     <div class="content">
@@ -62,6 +63,9 @@
 </template>
 
 <script>
+import { TimelineMax } from 'gsap'
+import { TimelineLite } from 'gsap'
+
 export default {
     name: 'About',
 
@@ -72,14 +76,20 @@ export default {
         let doc = document.documentElement;
         let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
         if (top <= 600){
+          title.innerHTML = ''
+          text.innerHTML = ''}
+        else if (top >= 600 && top <= 1300){
           title.innerHTML = 'From the beginning 🌴'
           text.innerHTML = 'Nice to meet u ! This is the 3 year-old me. And now you wonder, ok but which one ? The craziest one. I had the chance to grow up in a lovely family in a small town near Metz (France).'
-
-        } else if (top >= 600 && top <= 1300){
+        } else if (top >= 1300 && top <= 2100){
           title.innerHTML = 'Testing, learning and repeat 🐒'
           text.innerHTML = 'I was a quiet but very curious little girl. I have been fortunate to have parents who have always wanted to take me out of my comfort zone to discover new things.'
 
-        } else if (top >= 1300 && top <= 2100){
+        } else if (top >= 2100 && top <= 2900){
+          title.innerHTML = 'Testing, learning and repeat 🐒'
+          text.innerHTML = 'I was a quiet but very curious little girl. I have been fortunate to have parents who have always wanted to take me out of my comfort zone to discover new things.'
+
+        } else if (top >= 2900 && top <= 3500){
           title.innerHTML = 'Sport learnt me the most 🤾🏼‍♀️'
           text.innerHTML = 'I lived in a sportive family and I was in sports gyms from an early age. I played handball quickly and I never let go of it again. I lived amazing moments with a regional team, then by joining the Metz team with which I was French champion and then European vice-champion. '
 
@@ -96,16 +106,24 @@ export default {
         }
       })
     },
-    methods : {
+    methods: {
       mountAnimation: function(delay) {
-      const timeline = new TimelineLite()
-      timeline.from(this.$refs.title, .5, { y: '30px', opacity: 0, ease: Power1.easeOut }, delay + 0)}
-    }
+        const timeline = new TimelineLite()
+        timeline
+          .from(this.$refs.hello, .5, { y: '400px', opacity: 0, ease: Power1.easeOut }, delay + .5)
+    },
+  }
 }
 </script>
 
 
 <style scoped>
+
+.big-title {
+  font-family: 'CanelaWeb-Regular';
+  font-size: 30em;
+  margin-left: 20%;
+}
 
 .card {
     width: 385px;
@@ -116,7 +134,7 @@ export default {
 .content {
   display: block;
   width: 100%;
-  margin-top:12%;
+  margin-top:0%;
   /* padding-bottom: 70px; */
 }
 
@@ -130,7 +148,7 @@ export default {
 }
 
 .title-about {
-    color: #2A2A2A;
+    color: rgb(16, 16, 16);
     font-size: 58px;
     font-weight: 400;
     font-family: 'CanelaWeb-Regular';
@@ -149,16 +167,19 @@ export default {
   padding-top: 10%;
   width: 100%;
   position: fixed;
+  top: 100px;
+  right: 140px;
   width: 600px;
-  margin-left: 50%;
+  margin-left: 20%;
 }
 
 p {
-    color: #9B9B9B;
-    font-size: 18px;
-    font-weight: 400;
-    width: 70%;
-    line-height: 1.7;
+  width: 70%;
+  font-family: 'MaisonNeueBook', Helvetica, Arial, sans-serif;
+  color: rgb(16, 16, 16);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .link-about {

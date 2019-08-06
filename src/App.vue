@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <audio autoplay loop>
+      <!-- <source src="./assets/sound/dreams.mp3" type="audio/mp3"> -->
+    Your browser does not support the audio element.
+    </audio>
     <div id="nav">
       <router-link to="/">mood</router-link>
       <router-link to="/about" class="right-nav">about</router-link>

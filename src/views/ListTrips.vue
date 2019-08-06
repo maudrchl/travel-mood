@@ -9,6 +9,8 @@
         <img class="arrow-list" src="../assets/icons/arrow.svg"/>
         <div class="line-list"></div>
       </ul>
+      <transition name="fade">
+      </transition>
       </router-link>
     </div>
   </div>
@@ -28,11 +30,6 @@ export default {
         date: 'Now',
         city: 'Cape Town',
         country: 'SouthAfrica',
-      },
-      {
-        date: '2019',
-        city: 'Barcelona',
-        country: 'Spain 🇪🇸',
       },
       {
         date: '2019',
@@ -75,20 +72,19 @@ export default {
   created: function() {
     // this.data = this.$store.state.wp.pages.list
   },
-  methods: {
-    mountAnimation: function() {
-      const timeline = new TimelineLite()
-      console.log(timeline)
-      timeline
-        .from(this.$refs.title, .5, { y: '40px', opacity: 0, ease: Power1.easeOut }, delay + .5)
-    }
-   },
 };
 
 
 </script>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 .trips {
     height: 100%;
     padding-left: 8%;

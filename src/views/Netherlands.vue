@@ -45,12 +45,10 @@ import Card from "../components/Card.vue";
 import VueCarousel from "../components/Carousel.vue";
 import Vue from 'vue';
 
-
 export default {
   name: "Trip",
   components: {Card, VueCarousel}
 };
-
 </script>
 
 <style scoped>
@@ -66,7 +64,7 @@ export default {
 .header-title
 {
     position: absolute;
-    left: -6%;
+    left: -20%;
     top: 1%;
     font-size: 17em;
     color: white;
@@ -82,18 +80,20 @@ export default {
 h1 {
   font-size: 3.5rem;
   font-family: 'CanelaWeb-Regular';
-  padding-left: 8%;
-  padding-right: 50%;
+  padding-left: 23%;
+  padding-right: 30%;
   line-height: 1.3;
   font-weight: normal;
+  color: rgb(16, 16, 16);
 }
 
 p {
   font-family: 'MaisonNeueBook', Helvetica, Arial, sans-serif;
-  color: #9B9B9B;
-  font-size: 1rem;
-  padding-left: 8%;
-  padding-right: 58%;
+  color: rgb(16, 16, 16);
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-left: 23%;
+  padding-right: 23%;
   line-height: 1.8;
   margin-top: 3%;
   margin-bottom: 15%;

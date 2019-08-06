@@ -72,7 +72,7 @@ methods: {
 .header-title
 {
     position: absolute;
-    left: 10%;
+    left: -5%;
     top: 1%;
     font-size: 17em;
     color: white;
@@ -88,19 +88,23 @@ methods: {
 h1 {
   font-size: 3.5rem;
   font-family: 'CanelaWeb-Regular';
-  padding-left: 8%;
+  padding-left: 23%;
+  padding-right: 30%;
+  line-height: 1.3;
   font-weight: normal;
+  color: rgb(16, 16, 16);
 }
 
 p {
   font-family: 'MaisonNeueBook', Helvetica, Arial, sans-serif;
-  color: #9B9B9B;
-  font-size: 1rem;
-  padding-left: 8%;
-  padding-right: 60%;
+  color: rgb(16, 16, 16);
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-left: 23%;
+  padding-right: 23%;
   line-height: 1.8;
   margin-top: 3%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 ul {
