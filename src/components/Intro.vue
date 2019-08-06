@@ -6,10 +6,10 @@
 
 <style scoped>
 h1 {
-    text-align: center;
-    font-size: 90px;
-    font-family: 'CanelaWeb-Regular';
-    margin-top:20%;
-    color: #0C0C0C;
+  text-align: center;
+  font-size: 90px;
+  font-family: "CanelaWeb-Regular";
+  margin-top: 20%;
+  color: #0c0c0c;
 }
 </style>
