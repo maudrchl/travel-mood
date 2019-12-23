@@ -5,6 +5,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/maud_rchl/Desktop/Projets/travel-mood/.cache/dev-404-page.js")))
+
 }
 
