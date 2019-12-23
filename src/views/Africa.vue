@@ -49,15 +49,11 @@
             <h2 class="main-desc">Gardens</h2>
             <h2 class="sub-desc">Gardens</h2>
           </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-// import Card from "../components/Card.vue";
-import VueCarousel from "../components/Carousel.vue";
 
 export default {
   name: "Trip",
@@ -85,7 +81,7 @@ export default {
 .header-title
 {
     position: absolute;
-    top: 25%;
+    top: %;
     text-align:center;
     font-size: 130px;
     color: white;
