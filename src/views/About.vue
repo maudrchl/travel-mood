@@ -1,6 +1,5 @@
 <template>
   <div class="about" ref="about">
-    <Shapes/>
     <div class="content main">
       <h1 class="big-title" ref="hello">digital designer from paris ©2020</h1>
     </div>
@@ -30,7 +29,6 @@
 </template>
 
 <script>
-import { TimelineMax } from 'gsap'
 import { TimelineLite } from 'gsap'
 
 export default {
@@ -39,7 +37,7 @@ export default {
       mountAnimation: function(delay) {
         const timeline = new TimelineLite()
         timeline
-          .from(this.$refs.hello, .5, { y: '400px', opacity: 0, ease: Power1.easeOut }, delay + .5)
+          .from(this.$refs.hello, .5, { y: '400px', opacity: 0}, delay + .5)
     },
   }
 }

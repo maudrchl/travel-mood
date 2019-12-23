@@ -3,7 +3,7 @@
     <div class="header-trip">
         <h1 class="header-title parallax-item">Cape Town south africa</h1>
         <div class="card card-article parallax-item">
-            <img src="../assets/img/cpt2.jpg">
+            <img class="img-card" src="../assets/img/cpt2.jpg">
             <h2 class="title-card">Cape Town</h2>
             <h3 class="country-card">South Africa</h3>
         </div>
@@ -49,11 +49,12 @@
             <h2 class="main-desc">Gardens</h2>
             <h2 class="sub-desc">Gardens</h2>
           </div>
-      </div>
     </div>
+  </div>
   </div>
 </template>
 <script>
+
 
 export default {
   name: "Trip",
@@ -202,6 +203,44 @@ p {
 .text-component {
   width: 50%;
   margin-top: 30px;
+}
+
+.card {
+  width: 385px;
+  height: 452px;
+  background: white;
+  user-select: none;
+  z-index: 30;
+  opacity: 1;
+  transition-duration: 274ms;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+img {
+  width: 345px;
+  height: 330px;
+  margin-top: 20px;
+  user-select: none;
+  object-fit: cover;
+}
+
+.title-card {
+  color: #2a2a2a;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "CanelaWeb-Regular";
+}
+
+.country-card {
+  color: #c1c1c1;
+  font-size: 19px;
+  margin-top: -14px;
+  font-weight: 400;
 }
 
 </style>
