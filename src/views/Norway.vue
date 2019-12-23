@@ -6,7 +6,6 @@
         <img src="../assets/img/norway.png" />
         <h2 class="title-card">Portor</h2>
         <h3 class="country-card">Norway</h3>
-        <h3 class="date-card">April 2018</h3>
       </div>
     </div>
     <div class="top-article">

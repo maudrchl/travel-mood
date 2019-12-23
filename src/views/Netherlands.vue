@@ -1,186 +1,211 @@
 <template>
   <div class="detail-trip">
     <div class="header-trip">
-      <h1 class="header-title">Netherlands</h1>
-      <div class="card card-article">
-        <img src="../assets/img/amsterdam.png" />
-        <h2 class="title-card">Amsterdam</h2>
-        <h3 class="country-card">Netherlands</h3>
-        <h3 class="date-card">April 2018</h3>
+        <h1 class="header-title parallax-item">Amsterdam Netherlands</h1>
+        <div class="card card-article parallax-item">
+            <img src="../assets/img/dam4.jpeg">
+            <h2 class="title-card">Amsterdam</h2>
+            <h3 class="country-card">Netherlands</h3>
+        </div>
+    </div>
+    <div class="wrapper-small">
+      <h1>Cape Town, South Africa</h1>
+      <p>
+        It was a humorously perilous business for both of us. For, before we
+        proceed further, it must be said that the monkey-rope was fast at both
+        ends; fast to Queequeg's broad canvas belt, and fast to my narrow
+        leather one. So that for better or for worse, we two, for the time, were
+        wedded; and should poor Queequeg sink to rise no more, then both usage
+        and honour demanded.
+      </p>
+    </div>
+    <div class="full-width-img">
+      <img class="full-img" src="../assets/img/dam9.jpeg">
+    </div>
+    <div class="wrapper title-text">
+      <h1 class="title-component">In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</h1>
+       <p class="text-component">
+          In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there. There is no staying in any one place; for at one and the same time everything has to be done everywhere. It is much the same with him who endeavors the description of the scene. We must now retrace our way a little. It was mentioned that upon first breaking ground in the whale's back, the blubber-hook was inserted into the original hole there cut by the spades.
+        </p>
       </div>
-    </div>
-    <div class="top-article">
-      <h1>The country of 🚲</h1>
-      <p>
-        Clémence accompanied me through this road trip from the Netherlands to
-        Belgium. Our objective was to leave Amsterdam and then discover the
-        Netherlands and finish in Brussels before returning to Paris. This
-        journey in several stages allowed us to really discover this country.
-      </p>
-    </div>
-    <div class="imgs-three">
-      <img class="img-three" src="../assets/img/dam3.jpeg" />
-      <img class="img-three" src="../assets/img/dam4.jpeg" />
-      <img class="img-three" src="../assets/img/dam9.jpeg" />
-    </div>
-    <div class="middle-article">
-      <h1>Step 1 : Amsterdam, madame</h1>
-      <p>
-        After some adventures of Thalys, we finally arrive in Amsterdam. We
-        hurry to arrive at the youth hostel, where we share a room with 4 other
-        Korean women. Barely 5 minutes to put our things down and we go straight
-        to Paradiso Noord to attend the HER concert. We both really like this
-        band and it was really a great memory to see a French band playing
-        abroad. We really liked the atmosphere of the city very much and quiet
-        with the famous cycle paths but nevertheless we did not find the Dutch
-        very welcoming.
-      </p>
-    </div>
-    <div class="imgs-full">
-      <img class="img-full" src="../assets/img/dam.png" />
-    </div>
-    <div class="middle-article">
-      <h1>Step 2 : Utrecht and King’s day for 2 Queens</h1>
-      <p>
-        We take a train to Utrecht, happy to leave Amsterdam. We had booked an
-        airbnb with a couple from Utrecht, we were very well received. After a
-        few minutes of discussion, he said, "It was a good thing you came for
-        King's Day? We look at each other with Clemence and we both say to each
-        other, "What is it? King's Day?". He couldn't stop laughing, we had come
-        for the most festive day of the year without even knowing it. And
-        indeed, I think it was the best day of the trip for both of us.
-        Throughout the city, the inhabitants were making a huge sale (clothes,
-        bags...). Special dedication to the mother who sold her children's
-        branded belongings for 1€. A lot of good humour (and alcohol).
-      </p>
-    </div>
-    <div class="imgs-three">
-      <img class="img-three" src="../assets/img/dam1.jpeg" />
-      <img class="img-three" src="../assets/img/dam11.jpeg" />
-      <img class="img-three" src="../assets/img/dam12.jpeg" />
-    </div>
-    <div class="middle-article">
-      <h1>Step 3 : BruSSels, ma belle</h1>
-      <p>
-        Who is warmer than the Belgians. We stayed only two days in Belgium, but
-        it was enough to see how welcoming this country is and how caring people
-        are. A 6-hour bus ride back to Paris.
-      </p>
+      <div class="imgs-three">
+        <div class="img-slider">
+          <img class="img-three" src="../assets/img/dam3.jpeg" />
+          <div class="label">
+            <h2 class="main-desc">Gardens</h2>
+            <h2 class="sub-desc">Gardens</h2>
+          </div>
+        </div>
+        <div class="img-slider">
+          <img class="img-three" src="../assets/img/dam4.jpeg" />
+          <div class="label">
+            <h2 class="main-desc">Gardens</h2>
+            <h2 class="sub-desc">Gardens</h2>
+          </div>
+        </div>
+        <div class="img-slider">
+          <img class="img-three" src="../assets/img/dam9.jpeg" />
+          <div class="label">
+            <h2 class="main-desc">Gardens</h2>
+            <h2 class="sub-desc">Gardens</h2>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Card from "../components/Card.vue";
+// import Card from "../components/Card.vue";
 import VueCarousel from "../components/Carousel.vue";
-import Vue from 'vue';
 
 export default {
-  name: "Trip"
-  // components: { Card, VueCarousel }
+  name: "Trip",
+
+  mounted: function(){
+    window.addEventListener('scroll', () => {
+      let parent = document.querySelector('.detail-trip');
+      let children = parent.querySelectorAll('.parallax-item');
+      for(let i = 0; i < children.length; i++) {
+        children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+      }
+    }, false)
+  }
+  
 };
 </script>
 
 <style scoped>
+
 .header-trip {
   width: 100%;
   height: 760px;
-  margin-top: -90px;
-  background: #fab04e;
-  float: left;
-  margin-bottom: 15%;
 }
 
 .header-title
 {
     position: absolute;
-    left: -20%;
-    top: 1%;
-    font-size: 17em;
+    top: 25%;
+    text-align:center;
+    font-size: 130px;
     color: white;
     z-index: 1;
+    font-weight: 100;
+    line-height: 120px;
+    width: 70%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    color: #F9F2F7;
+    text-transform: uppercase;
 }
 
 .card-article {
   margin-top: 12%;
   position: absolute;
-  margin-left: 35%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  opacity : 1;
+  text-align: center;
+}
+
+.wrapper-small {
+  padding: 200px 0;
+  width: 60%;
+  margin: 0 20%;
+}
+
+.wrapper {
+  padding: 200px 0;
+  width: 84%;
+  margin: 0 8%;
 }
 
 h1 {
   font-size: 3.5rem;
-  font-family: "CanelaWeb-Regular";
-  padding-left: 8%;
-  padding-right: 50%;
+  font-family: 'CanelaWeb-Regular';
   line-height: 1.3;
   font-weight: normal;
-  color: rgb(16, 16, 16);
+  color: #F9F2F7;
 }
+
 
 p {
-  font-family: "MaisonNeueBook", Helvetica, Arial, sans-serif;
-  color: #9b9b9b;
-  font-size: 1rem;
-  padding-left: 8%;
-  padding-right: 58%;
+  font-family: 'CircularStd-Book', Helvetica, Arial, sans-serif;
+  color: #F9F2F7;
+  width: 80%;
+  font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1.8;
-  margin-top: 3%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  font-weight: 100;
+  opacity: 0.6;
 }
 
-ul {
-  display: inline-block;
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 8%;
-  margin-bottom: 28%;
-  font-family: "MaisonNeueBook", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
+.full-width-img {
+  width: 84%;
+  margin: 0 8%;
+  height: 700px;
 }
 
-.first-list {
-  margin-top: 30px;
-}
-
-li {
-  margin: 15px 0;
-  list-style: none;
-  font-weight: normal;
-}
-
-li:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.fav-places {
-  display: block;
-  margin-top: 30%;
+.full-img {
+  width: 100%;
+  height: 100%;
 }
 
 .imgs-three {
-  display: inline-block;
-  margin-left: 6%;
-  width: 100%;
+  display: flex;
+  width: 90%;
+  margin: 0 5%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
 }
 
-.imgs-full {
-  margin-left: 6%;
-  width: 88%;
-}
-
-.img-full {
-  margin-left: 2%;
-  width: 93%;
-  height: 400%;
+.img-slider {
+  height: 650px;
+  width: 30%;
+  margin: 0 10px;
 }
 
 .img-three {
-  height: 600px;
-  margin-right: 5%;
+  width: 100%;
+  height: 100%;
 }
 
-.middle-article {
-  margin-top: 130px;
+.main-desc {
+  font-family: 'CircularStd-Book', Helvetica, Arial, sans-serif;
+  color: #F9F2F7;
+  font-size: 18px;
+  font-weight: 1;
 }
+
+.sub-desc {
+  font-family: 'CircularStd-Book', Helvetica, Arial, sans-serif;
+  color: #F9F2F7;
+  font-size: 18px;
+  font-weight: 1;
+  opacity: 0.5;
+  margin-top: -10px;
+}
+
+.title-text{
+  display: flex;
+  align-items: flex-start;
+}
+
+.title-component {
+  width: 40%;
+  font-size: 46px;
+  margin-right: 10%;
+}
+
+.text-component {
+  width: 50%;
+  margin-top: 30px;
+}
+
 </style>
