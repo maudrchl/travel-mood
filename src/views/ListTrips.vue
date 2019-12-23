@@ -8,10 +8,10 @@
     >
       <router-link :to="'/trips/' + list[key].country">
         <ul class="trip-item">
-          <li class="date-list">{{ list[key].date }}</li>
-          <li class="city-list" ref="title">{{ list[key].city }}</li>
-          <li class="country-list">{{ list[key].country }}</li>
-          <img class="arrow-list" src="../assets/icons/arrow.svg" />
+          <div class="content-trip">
+            <li class="city-list" ref="title">{{ list[key].city }}</li>
+            <li class="date-list">{{ list[key].date }}</li>
+          </div>
           <div class="line-list"></div>
         </ul>
       </router-link>
@@ -29,14 +29,19 @@ export default {
     return {
       list: [
         {
-          date: "Now",
+          date: "Soon",
+          city: "Iceland",
+          country: "Iceland"
+        },
+        {
+          date: "2019",
           city: "Cape Town",
           country: "SouthAfrica"
         },
         {
           date: "2019",
           city: "Barcelona",
-          country: "Spain 🇪🇸"
+          country: "Spain"
         },
         {
           date: "2019",
@@ -46,12 +51,12 @@ export default {
         {
           date: "2019",
           city: "Stockholm",
-          country: "Sweden 🇸🇪"
+          country: "Sweden"
         },
         {
           date: "2019",
           city: "Copenhagen",
-          country: "Denmark 🇩🇰"
+          country: "Denmark"
         },
         {
           date: "2018",
@@ -61,17 +66,17 @@ export default {
         {
           date: "2018",
           city: "Prague",
-          country: "Czech Republic 🇨🇿"
+          country: "Czech Republic"
         },
         {
           date: "2018",
           city: "Berlin",
-          country: "Lovely Germany 🇩🇪"
+          country: "Lovely Germany"
         },
         {
           date: "2017",
           city: "Sweet France",
-          country: "Home 🇫🇷"
+          country: "Home"
         }
       ]
     };
@@ -104,34 +109,28 @@ export default {
 
 .trips {
   height: 100%;
-  padding-left: 8%;
-  width: 92%;
+  padding-left: 12%;
+  width: 70%;
   font-size: 10px;
-  /* padding-left: 120px; */
   padding-bottom: 120px;
-  padding-top: 140px;
+  padding-top: 400px;
 }
 
-h3 {
-  margin: 20% 0 0;
-}
 
-.trip-item {
-  list-style-type: none;
-  padding: 0;
+.content-trip {
+  display: flex;
 }
 
 .items {
-  color: #0c0c0c;
+  color: #F9F2F7;
   text-decoration: none;
 }
 
 li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0;
   font-size: 5em;
-  color: #0c0c0c;
-  margin-right: 40px;
+  color: #F9F2F7;
   text-decoration: none;
 }
 
@@ -141,26 +140,15 @@ li {
 
 .city-list {
   font-family: "CanelaWeb-Regular";
+  flex: 1;
 }
 
 .line-list {
-  width: 92%;
+  width: 100%;
   height: 2px;
-  background: #0c0c0c;
-  opacity: 0.02;
-  margin: 30px 0;
+  background: white;
+  opacity: 0.05;
+  margin: 60px 0;
 }
 
-.country-list {
-  font-size: 24px;
-  color: #c4c4c4;
-  text-decoration: none;
-  margin-left: -10px;
-}
-
-.arrow-list {
-  width: 3%;
-  float: right;
-  opacity: 0;
-}
 </style>

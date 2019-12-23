@@ -1,15 +1,15 @@
 <template>
   <div class="detail-trip">
     <div class="header-trip">
-        <h1 class="header-title parallax-item">Cape Town</h1>
+        <h1 class="header-title parallax-item">Barcelona</h1>
         <div class="card card-article parallax-item">
             <img src="../assets/img/cpt2.jpg">
-            <h2 class="title-card">Cape Town</h2>
-            <h3 class="country-card">South Africa</h3>
+            <h2 class="title-card">Barcelona</h2>
+            <h3 class="country-card">Spain</h3>
+            <h3 class="date-card">June 2019</h3>
         </div>
     </div>
       <div class="top-article">
-        <h1>Cape Town, South Africa</h1>
         <p>
           It was a humorously perilous business for both of us. For, before we
           proceed further, it must be said that the monkey-rope was fast at both
@@ -22,7 +22,7 @@
       <div class="full-width-img">
         <img class="full-width-img" src="../assets/img/cptfull.jpeg">
       </div>
-      <h1>Rainbow nation </h1>
+      <h1>Hola, que tal?</h1>
        <p>
           It was a humorously perilous business for both of us. For, before we
           proceed further, it must be said that the monkey-rope was fast at both
@@ -31,11 +31,6 @@
           wedded; and should poor Queequeg sink to rise no more, then both usage
           and honour demanded.
         </p>
-        <div class="imgs-three">
-          <img class="img-three" src="../assets/img/dam3.jpeg" />
-          <img class="img-three" src="../assets/img/dam4.jpeg" />
-          <img class="img-three" src="../assets/img/dam9.jpeg" />
-        </div>
     </div>
   </div>
 </template>
@@ -81,7 +76,6 @@ export default {
   position: absolute;
   margin-left: 35%;
   opacity : 1;
-  text-align: center;
 }
 
 h1 {
@@ -91,6 +85,7 @@ h1 {
   line-height: 1.3;
   font-weight: normal;
   color: #F9F2F7;
+  margin: 15% 0 -6% 0;
 }
 
 p {
@@ -112,19 +107,6 @@ p {
   height: 700px;
   margin: 0;
 }
-
-.imgs-three {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-three {
-  height: 600px;
-  width: 30%;
-}
-
 
 
 </style>

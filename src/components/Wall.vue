@@ -88,10 +88,6 @@ a {
   overflow: hidden;
   position: relative;
 }
-body {
-  perspective: 800px;
-  transform-style: preserve-3d;
-}
 
 .cards {
   width: 130%;

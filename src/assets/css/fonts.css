@@ -21,3 +21,21 @@
   src: url('../fonts/MaisonNeueBold.ttf');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Book.otf');
+  font-weight: book;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Medium.otf');
+  font-weight: medium;
+}

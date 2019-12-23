@@ -19,31 +19,6 @@
         wedded; and should poor Queequeg sink to rise no more, then both usage
         and honour demanded.
       </p>
-      <vue-carousel></vue-carousel>
-    </div>
-    <div class="fav-places">
-      <h1>Best places</h1>
-      <ul>
-        Drink and Eat
-        <li class="first-list">Judith & Bertil<span>Bar</span></li>
-        <li>Nada Bar<span>Restaurant</span></li>
-        <li>Ugglan<span>Bar</span></li>
-        <li>Judith & Bertil <span>Bar</span></li>
-      </ul>
-      <ul>
-        Discover
-        <li class="first-list">Judith & Bertil<span>Bar</span></li>
-        <li>Nada Bar<span>Restaurant</span></li>
-        <li>Ugglan<span>Bar</span></li>
-        <li>Judith & Bertil <span>Bar</span></li>
-      </ul>
-      <ul>
-        Drink and Eat
-        <li class="first-list">Judith & Bertil<span>Bar</span></li>
-        <li>Nada Bar<span>Restaurant</span></li>
-        <li>Ugglan<span>Bar</span></li>
-        <li>Judith & Bertil <span>Bar</span></li>
-      </ul>
     </div>
   </div>
 </template>
@@ -85,8 +60,8 @@ export default {
 
 .header-title {
   position: absolute;
-  left: 10%;
-  top: 1%;
+  left: -5%;
+  top: 0%;
   font-size: 17em;
   color: white;
   z-index: 1;
@@ -96,25 +71,25 @@ export default {
   margin-top: 12%;
   position: absolute;
   margin-left: 35%;
+  opacity: 1;
 }
 
 h1 {
   font-size: 3.5rem;
   font-family: 'CanelaWeb-Regular';
-  padding-left: 23%;
-  padding-right: 30%;
   line-height: 1.3;
   font-weight: normal;
   color: rgb(16, 16, 16);
+  margin-left: 20%;
 }
 
 p {
-  font-family: 'MaisonNeueBook', Helvetica, Arial, sans-serif;
+  font-family: 'CircularStd-Book', Helvetica, Arial, sans-serif;
   color: rgb(16, 16, 16);
   font-size: 1.4rem;
-  font-weight: 300;
-  padding-left: 23%;
-  padding-right: 23%;
+  width: 55%;
+  margin-left: 20%;
+  font-weight: 100;
   line-height: 1.8;
   margin-top: 3%;
   margin-bottom: 15%;
