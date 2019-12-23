@@ -82,7 +82,7 @@ export default {
 .header-title
 {
     position: absolute;
-    top: %;
+    top: 25%;
     text-align:center;
     font-size: 130px;
     color: white;
