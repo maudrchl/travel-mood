@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="34px" viewBox="0 0 39 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-279.000000, -2547.000000)" stroke="#0F0F0F" stroke-width="6">
+            <g id="arrow" transform="translate(281.000000, 2550.000000)">
+                <polyline id="Path-2" points="6.45508269 0.699016182 33.152776 0.699016182 33.152776 29.3760814"></polyline>
+                <path d="M-4.84241265,14.5704639 L39.3010693,14.5704639" id="Path" transform="translate(17.229328, 14.570464) rotate(140.000000) translate(-17.229328, -14.570464) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

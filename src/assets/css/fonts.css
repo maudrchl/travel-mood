@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Canela';
+  src: url('../fonts/CanelaWeb-Regular.otf');
+  font-weight: regular;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('../fonts/MaisonNeueBook.otf');
+    font-weight: normal;
+  }
+  
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/MaisonNeueLight.otf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/MaisonNeueBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Book.otf');
+  font-weight: book;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Medium.otf');
+  font-weight: medium;
+}
