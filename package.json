@@ -10,13 +10,9 @@
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.2",
     "babel-preset-es2015": "^6.24.1",
-<<<<<<< HEAD
     "draggabilly": "^2.2.0",
     "gsap": "^2.1.3",
     "imagesloaded": "^4.1.4",
-=======
-    "gsap": "^2.1.3",
->>>>>>> 437d4b77e9b7f84bd6eac7e6c1dadaaf13fc1c4b
     "jquery": "^3.4.1",
     "nuxt": "^2.11.0",
     "vue": "^2.6.10",
