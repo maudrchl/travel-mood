@@ -29,6 +29,14 @@ export default {
     return {
       list: [
         {
+<<<<<<< HEAD
+=======
+          date: "Soon",
+          city: "Iceland",
+          country: "Iceland"
+        },
+        {
+>>>>>>> 437d4b77e9b7f84bd6eac7e6c1dadaaf13fc1c4b
           date: "2019",
           city: "Cape Town",
           country: "SouthAfrica"
@@ -95,11 +103,14 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 
 a {
   text-decoration: none;
 }
 
+=======
+>>>>>>> 437d4b77e9b7f84bd6eac7e6c1dadaaf13fc1c4b
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

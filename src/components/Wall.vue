@@ -90,8 +90,13 @@ a {
 }
 
 .cards {
+<<<<<<< HEAD
   width: 150%;
   height: 200vh;
+=======
+  width: 130%;
+  height: 150vh;
+>>>>>>> 437d4b77e9b7f84bd6eac7e6c1dadaaf13fc1c4b
   position: absolute;
   top: 50%;
   left: 50%;
